@@ -17,13 +17,16 @@ systemctl restart nginx
 sudo emacs /etc/nginx/sites-available/default
 
 
-#Congiguration 
-#--------------------------------------------------------------------------------------------------------------
+#Configuration 
+--------------------------------------------------------------------------------------------------------------
 
-server {
+
+	server 
+
+	{
+	
 	listen 80 default_server;
 	listen [::]:80 default_server;
-
 
 
 	root /var/www/html;
@@ -65,8 +68,8 @@ server {
 	     proxy_pass http://facebook.com;
   
 	}
+	}
 
-}
 
 
 
